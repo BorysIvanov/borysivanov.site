@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="borysivanov">
+    <meta name="author" content="">
+
+    <title> QA Borys Ivanov</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/half-slider.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['_My_skills', '%'],
+          ["Manual testing", 61],
+          ["WEB testing", 41],
+          ["Desktop testing", 32],
+          ["API testing", 40],
+          ['PostgresSQL', 54],
+          ['HTML&CSS', 48],
+          ["Putty", 43],
+          ["WinSCP", 48],
+          ["VMWare&VMVirtyalBox", 37],
+          ["Cygwin", 25],
+          ["Postman", 35],
+          ["Jira", 69],
+          ["CVS", 34],
+          ["GameTesting", 87],
+          ["RTC", 56],
+          ["english", 60],
+        ]);
+
+        var options = {
+          title: '_My_skills',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { title: 'MY_skills',
+                   subtitle: 'percentage' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Percentage'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "100%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                   <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">_About_Me</a>
+                    </li>
+                    <li>
+                        <a href="index.html">_My_Skills</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">_Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav> 
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('image/red.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>WEB TESTING</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('image/black.png');"></div>
+                <div class="carousel-caption">
+                    <h2>GAME TESTING</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/image/blue.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>DESKTOP TESTING</h2>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('/image/green.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>MOBILE TESTING</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1><img src="image/borysivanov.jpg" alt="photo" style="width:10%;height:10%;">    Borys Ivanov </h1>
+                	<p>E-mail: mail@borysivanov.site</p>
+                	<p>Contact number: +380977749838</p>
+                	<p>Skype: SET357</p>
+                	<p>Linkedin: <a href="https://www.linkedin.com/in/borys-ivanov/">borys.ivanov</a></p>
+                	<!--<div>
+						<img src="image/borysivanov.jpg" alt="photo" style="position: align-right; width:10%;height:10%;">
+					</div-->
+                					<hr></hr>
+                	<h3>_SUMMARY</h3>
+                		<p>
+	                		<b>3+ year of experience in the field of IT with a focus on QA and testing web-based project (BMP), Android and iOS games, effective use of the QA and testing knowledge. Good knowledge of software testing (regression, functional, integration, usability).
+							Experienced in defining testing methodologies, designing Test Cases and documentation for effective QA implementation in all phases of a software development life cycle.
+							Experienced in coordinating group work and holding responsibility for the test management of the project throughout its whole life cycle.</b>
+							<ul>Employment: 
+								<li>Full time, part time, project work</li>
+								<li>Work schedule: full day</li>
+								<li>Remote working, ready for relocation</li>
+							</ul>
+						</p>	
+									<hr></hr>
+					<h3>MY_EXPERIENCE:</h3>
+								<br>							
+						<h4><b><a href="http://globallogic.com/ua" target="_blank">GlobalLogic Ukraine</a>, Project: <a href="https://www.blueworkslive.com/home" target="_blank">IBM BPM</a></b></h4>
+							<p><b>Ukraine, Kyiv</b></p>
+							<p><b>September 2016 — until now</b></p>
+							<p><u>Position: Quality Assurance Test Engineer</u></p>
+							<ul><b>Key Responsibilities:</b>
+								<li>Manual functional, white-box, ad-hoc, regression, GUI\UI testing,</li> 
+								<li>Development, analysis, review and testing of requirements,</li> 
+								<li>Working with Test Documentation: Test Design, Test Cases, Test Summary Report, defect reporting - both creation and review.</li>
+							</ul>	
+							<p><b>Technologies: Jira, IBM (RQM, RTC), SQL, pgAdmin III, Postman, Swagger, Putty, VMware, VM VirtualBox, Jenkins, HTML, CSS, WinSCP</b></p>
+									<hr></hr>
+						<h4><b><a href="http://www.smigames.com/" target="_blank">Space Monkey International Games</a>, Projects: <a href="http://www.beardmengame.com" target="_blank">Beardmen the Game</a>, <a href="http://overgamez.com/magic-academy-new-game-on-vk-and-ok/" target="_blank">Magic Academy</a>, <a href="http://droidzoom.com/games/info.html?id=1895#!&header=text" target="_blank">2048 PvP</a></b></h4>
+							<p><b>Ukraine, Kyiv</b></p>
+							<p><b>March 2015 — September 2016</b></p>
+							<p><u>Position: Game Tester</u></p>
+								<ul><b>Key Responsibilities:</b>
+									<li>Manual functional testing web and desktop applications (games)</li>
+									<li>Analysis of requirements and documentation</li>
+									<li>Creating project documentation</li>
+									<li>Work with customers - analysis of customer’s requirements and their further description for analysts</li>
+									<li>Creating and maintaining tests and test documentation</li>
+									<li>Creating reports for test results</li>
+									<li>Defects searching, reporting and verification</li>
+									<li>Interacted with software developers during bug reviews and participated in QA meetings.</li>
+								</ul>
+									<hr></hr>
+						<h4><b>PE "IVIS"</b></h4>
+							<p><b>Ukraine, Kyiv</b></p>
+							<p><b>November 2007 — August 2014</b></p>
+							<p><u>Position: Technical Director</u></p>
+								<ul><b>Key Responsibilities:</b>
+									<li>Providing uninterrupted production and quality control.</li>
+									<li>Meetings with potential clients and maintaining existing customer base</li>
+									<li>Purchase of consumables and technical support equipment</li>
+								</ul>
+									<hr></hr>
+						<h4><b>Local network "LepseLan"</b></h4>
+							<p><b>Ukraine, Kyiv</b></p>
+								<p><b>October 2009 — April 2012</b></p>
+								<p><u>Position: LAN Engineer, Technical support</u></p>
+								<ul><b>Key Responsibilities:</b>
+									<li>Connecting users</li>
+									<li>LAN Setup</li>
+									<li>Network support</li>
+								</ul>
+									<hr></hr>
+ </h1>
+                <div id="top_x_div" style="width: 900px; height: 500px;"></div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; borysivanov.site 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 10000 //changes the speed
+    })
+    </script>
+
+</body>
+
+</html>
